@@ -9,15 +9,22 @@ public class array1 {
         System.out.println("insertar 5 numeros!");
 
         int[] numeros = new int[5];
+        int sum = 0;
+
         for (int i = 0; i < numeros.length; i++) {
-            System.out.println("Introduce el siguente numero:");
+            System.out.print("Introduce el siguente numero " + (i + 1) + ": ");
             numeros[i] = sc.nextInt();
         }
 
+        System.out.println("\n=== Results ===");
+        System.out.print("Introduced numbers: ");
 		for (int i = 0; i < numeros.length; i++){
-			System.out.println(numeros[i]);
+            System.out.print(numeros[i] + "  ");
+            sum += numeros[i];
 		}
-		System.out.println();
+        System.out.println("\n");
+        System.out.print("The total sum of these numbers is: "  + sum);
+
         sc.close();
     }
 }
