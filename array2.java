@@ -9,9 +9,9 @@ public class array2 {
         int[] destino = new int[origen.length];
 
         System.out.print("Son numeros pares: ");
-        for (int i = 0; i < origen.length; i++) {
-            if (origen[i] % 2 == 0) {
-                System.out.print(origen[i]+", ");
+        for (int i : origen) {
+            if (i % 2 == 0) {
+                System.out.print(i +", ");
             }
         }
         System.out.println();
