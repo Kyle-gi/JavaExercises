@@ -17,7 +17,6 @@ public class array2 {
             }
         }
 
-
         for (int i = 0; i < destino.length; i++){
             if (destino[i] % 2 == 0 && destino[i] > 25){
                 System.out.print("Destino de numeros pares: " + destino[i]);
